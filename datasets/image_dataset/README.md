@@ -25,13 +25,13 @@ The dataset is intended for developing image classification models such as **Mob
 
 # Dataset Summary
 
-| Property | Value |
-|----------|--------|
-| Total Crops | 5 |
-| Total Classes | 19 |
-| Total Images | 22,689 |
-| Image Format | JPG / JPEG |
-| Dataset Size | ~1.36 GB |
+| Property | Value                            |
+|----------|----------------------------------|
+| Total Crops | 5                                |
+| Total Classes | 19                               |
+| Total Images | 22,169                           |
+| Image Format | JPG / JPEG                       |
+| Dataset Size | ~1.36 GB                         |
 | Task | Multi-class Image Classification |
 
 ---
@@ -48,7 +48,7 @@ The dataset is intended for developing image classification models such as **Mob
 
 # Class Distribution
 
-## 🌽 Corn (Maize)
+##  Corn (Maize)
 
 | Class | Images |
 |--------|-------:|
@@ -63,19 +63,19 @@ The dataset is intended for developing image classification models such as **Mob
 
 ---
 
-## 🥔 Potato
+##  Potato
 
 | Class | Images |
 |--------|-------:|
-| Early Blight | 1,000 |
-| Healthy | 988 |
-| Late Blight | 1,000 |
+| Early Blight |  1,000 |
+| Healthy |    968 |
+| Late Blight |  1,000 |
 
-**Total Images:** **2,988**
+**Total Images:** **2,968**
 
 ---
 
-## 🌾 Rice
+##  Rice
 
 | Class | Images |
 |--------|-------:|
@@ -87,7 +87,7 @@ The dataset is intended for developing image classification models such as **Mob
 
 ---
 
-## 🍅 Tomato
+##  Tomato
 
 | Class | Images |
 |--------|-------:|
@@ -100,7 +100,7 @@ The dataset is intended for developing image classification models such as **Mob
 
 ---
 
-## 🌾 Wheat
+##  Wheat
 
 | Class | Images |
 |--------|-------:|
@@ -198,25 +198,35 @@ This custom dataset was created by combining images from the following publicly 
 
 Repository:
 
-https://github.com/spMohanty/PlantVillage-Dataset
+- https://github.com/spMohanty/PlantVillage-Dataset
 
----
 
 ## 2. 15 Crop and 45 Disease and Healthy Dataset
 
 Mendeley Data:
 
-https://data.mendeley.com/datasets/8fr7grr73p/1
+- https://data.mendeley.com/datasets/8fr7grr73p/1
+
+---
+# Source Datasets
+
+- https://huggingface.co/datasets/ipartzix/Crop_Disease_Image_Dataset
 
 ---
 
 # Citation
 
-# Source Datasets
+If you use this dataset in your research, academic work, or project, please cite:
 
-This custom dataset was created by combining images from multiple publicly available datasets.
-
----
+```bibtex
+@dataset{paul2026crop_disease_image_dataset,
+  author       = {Partha Paul},
+  title        = {Crop Disease Image Dataset},
+  year         = {2026},
+  publisher    = {Hugging Face},
+  url          = {https://huggingface.co/datasets/ipartzix/Crop_Disease_Image_Dataset}
+}
+```
 
 ## 1. PlantVillage Dataset
 
