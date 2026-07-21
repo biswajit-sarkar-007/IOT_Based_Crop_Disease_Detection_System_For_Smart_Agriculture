@@ -1,0 +1,87 @@
+IoT_Based_Crop_Disease_Detection_System/
+│
+├── datasets/
+│   ├── image_dataset/
+│   │   └── README.md    # Hugging Face dataset link
+│   │
+│   └── sensor_dataset/
+│       ├── sensor_data.csv
+│       └── README.md
+│
+├── notebooks/
+│   ├── 01_sensor_data_analysis.ipynb
+│   ├── 02_sensor_model_training.ipynb
+│   ├── 03_image_preprocessing.ipynb
+│   ├── 04_mobilenetv3_training.ipynb
+│   └── 05_model_evaluation.ipynb
+│
+├── src/
+│   ├── image_classification/
+│   │   ├── dataset.py
+│   │   ├── transforms.py
+│   │   ├── model.py
+│   │   ├── train.py
+│   │   ├── evaluate.py
+│   │   └── predict.py
+│   │
+│   ├── sensor_prediction/
+│   │   ├── preprocess.py
+│   │   ├── train.py
+│   │   ├── evaluate.py
+│   │   └── predict.py
+│   │
+│   ├── preprocessing/
+│   │   ├── image_preprocessing.py
+│   │   └── sensor_preprocessing.py
+│   │
+│   └── utils/
+│       ├── config.py
+│       ├── helper.py
+│       └── visualization.py
+│
+├── models/
+│   ├── cnn/
+│   │   ├── mobilenetv3_best.pth
+│   │   └── class_names.json
+│   │
+│   └── ml/
+│       ├── random_forest.pkl
+│       ├── xgboost.pkl
+│       ├── lightgbm.pkl
+│       └── best_model.pkl
+│
+├── web_app/
+│   ├── app.py
+│   ├── routes.py
+│   ├── templates/
+│   │   ├── index.html
+│   │   └── result.html
+│   │
+│   ├── static/
+│   │   ├── css/
+│   │   ├── js/
+│   │   ├── images/
+│   │   └── uploads/
+│   │
+│   └── requirements.txt
+│
+├── arduino/
+│   ├── crop_disease_detection.ino
+│   └── sensors.md
+│
+├── docs/
+│   ├── architecture.png
+│   ├── workflow.png
+│   ├── dataset_description.md
+│   └── screenshots/
+│
+├── tests/
+│   ├── test_cnn.py
+│   ├── test_ml.py
+│   └── test_api.py
+│
+├── requirements.txt
+├── README.md
+├── LICENSE
+├── .gitignore
+└── .env.example
