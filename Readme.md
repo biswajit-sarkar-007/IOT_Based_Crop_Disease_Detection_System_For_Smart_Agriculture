@@ -167,53 +167,93 @@ Leaf Image
 - Disease Name
 - Healthy/Diseased
 - Confidence Score
+---
+# Dataset Information
+
+This project utilizes two publicly available datasets to train the Machine Learning and Deep Learning models.
 
 ---
 
-#  Dataset Information
+## 1. Crop Health & Environmental Stress Dataset
 
-Two publicly available datasets were used in this project.
+This dataset is used to train the **Machine Learning** model for crop health prediction based on environmental conditions.
 
----
-
-## 1️. Crop Health & Environmental Stress Dataset
-
-Used for Machine Learning model training.
-
-### Contains
+### Features
 
 - Temperature
 - Humidity
 - Soil Moisture
-- Crop Health
-- Environmental Stress
+- Crop Health Label (Healthy / Unhealthy)
 
-Approximate Records:
+### Dataset Statistics
 
-**50,000 – 70,000 sensor records**
+- **Total Records:** 212,019
+- **Task:** Binary Classification (Healthy / Unhealthy)
 
-Dataset Source:
+### Source
+
+**Dataset Name:** Crop Health & Environmental Stress Dataset
 
 https://www.kaggle.com/datasets/datasetengineer/crop-health-and-environmental-stress-dataset
 
 ---
 
-## 2️. PlantVillage Dataset
+## 2. Custom Crop Disease Image Dataset
 
-Used for CNN model training.
+This dataset is used to train the **Deep Learning (CNN)** model for crop disease classification.
 
-Contains thousands of labeled crop leaf images for disease classification.
+The final dataset was created by combining and cleaning images collected from multiple publicly available datasets.
 
-Approximate Images:
+### Original Data Sources
 
-**25,000 – 30,000 images**
+#### • PlantVillage Dataset
 
-Dataset Source:
+Dataset Link:
 
 https://github.com/spMohanty/PlantVillage-Dataset
 
+#### • 15 Crop and 45 Disease and Healthy Dataset (Mendeley Data)
+
+Dataset Link:
+
+https://data.mendeley.com/datasets/8fr7grr73p/1
+
 ---
 
+### Final Dataset Statistics
+
+| Crop | Classes | Images |
+|------|---------:|-------:|
+| Corn (Maize) | 6 | 6,617 |
+| Potato | 3 | 2,988 |
+| Rice | 3 | 3,637 |
+| Tomato | 4 | 6,627 |
+| Wheat | 3 | 2,820 |
+
+### Overall Summary
+
+- **Total Crops:** 5
+- **Total Classes:** 19
+- **Total Images:** 22,689
+- **Image Format:** JPG / JPEG
+- **Dataset Size:** ~1.36 GB
+
+### Train / Validation / Test Split
+
+A **stratified split** is used to maintain the class distribution across all categories.
+
+- **Training Set:** 70%
+- **Validation Set:** 15%
+- **Testing Set:** 15%
+
+### Image Preprocessing
+
+During model training, images are processed dynamically using **PyTorch Torchvision** transforms.
+
+- Automatic image resizing
+- Image normalization
+- Data augmentation (training set only)
+- Original images remain unchanged
 #  System Architecture
 
 ```
