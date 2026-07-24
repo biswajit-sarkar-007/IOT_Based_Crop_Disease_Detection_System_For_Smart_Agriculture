@@ -1,6 +1,10 @@
 # PyCharm
 .idea/
 
+# VS code 
+.vscode/
+
+
 # Project file
 *.iml
 
